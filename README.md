@@ -30,7 +30,7 @@ Para instalação do sistema deve serguir os comandos abaixo no Windows:
 
 > php artisan key:generate
 
-7. Crie o banco de dados e as tabelas com os comandos do arquivo `bancoDeDados.sql` que está no diretório raiz. O framework já está preparado para criar todas as tabelas necessárias, mas será necessário que pelo menos crie o banco de dados com o comando abaixo no PostgreSQL:
+7. Crie o banco de dados e as tabelas com os comandos do arquivo `bancoDeDados.sql` que está no diretório raiz. Se não quiser utilizar o script para criar as tabelas, o framework já está preparado com as migrações das tabelas necessárias, mas será necessário que pelo menos crie o banco de dados com o comando abaixo no PostgreSQL:
 
 > CREATE DATABASE lista_espera ENCODING = 'UTF8';
 
@@ -41,3 +41,5 @@ Cria as tabelas pelo Laravel:
 8. Execute o projeto:
 
 > php artisan serve
+
+Após executar o servidor de desenvolvimento do Laravel a aplicação estará acessível no endereço http://localhost:8000
